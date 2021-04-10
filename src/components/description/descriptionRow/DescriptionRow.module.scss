@@ -1,0 +1,15 @@
+@import '../../../sass/abstracts/mixins';
+@import '../../../sass/abstracts/vars';
+
+.row{
+    width: 100%;
+    .item{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        .text{
+            @include text(14px, 500, 20px);
+        }
+    }
+}

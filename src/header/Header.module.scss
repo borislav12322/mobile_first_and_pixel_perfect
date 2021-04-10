@@ -1,0 +1,55 @@
+@import '../sass/abstracts/mixins';
+
+.header{
+    border: 2px red solid;
+    padding: 20px 0px;
+    @media screen and(min-width: 768px){
+        padding: 38px 0px;
+    }
+    
+
+    
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .content{
+            display: flex;
+            align-items: center;
+            .phoneLink{
+                color: #5286EC;
+                @include text(14px, 400, 17px);
+                margin-left: 45px;
+
+                @media screen and(min-width: 576px) {
+                    display: none;
+                }
+            }
+
+            .PhoneLinkMore{
+                display: none;
+
+                @media screen and(min-width: 576px) {
+                    display: block;
+                    margin-left: 36px;
+                }
+
+                .linkText{
+                    color:#B3B3B3;
+                    @include text(14px, 400, 17px);
+                }
+
+                .linkPhoneNumber{
+                    color: #37373F;
+                    @include text(14px, 400, 17px);
+                }
+            }
+        }
+
+        .profileLink{
+            @media screen and(min-width: 1280px){
+                
+            }
+        }
+    }
+}

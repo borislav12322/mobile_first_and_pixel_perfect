@@ -1,0 +1,49 @@
+@import '../../sass/abstracts/mixins';
+@import '../../sass/abstracts/vars';
+
+.container {
+    display: flex;
+    padding: 14px 0px;
+    border: 0.5px solid #C7C7C7;
+    border-left: none;
+    border-right: none;
+    width: 100%;
+
+    .reviewIcon {
+        margin-right: 12px;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .text {
+            @include text(14px, 400, 20px);
+
+            .numbers {
+                font-weight: 500;
+                @media screen and(min-width:576px){
+                    font-weight: 600;
+                }
+            }
+
+            @media screen and(min-width:576px){
+                margin-right: 14px;
+                @include text(18px, 400, 20px);
+            }
+        }
+
+        .stars {
+            align-self: start;
+            @media screen and(min-width:576px){
+                align-self: center;
+            }
+        }
+
+        @media screen and(min-width:576px) {
+            flex-direction: row;
+            align-items: center;
+        }
+    }
+}

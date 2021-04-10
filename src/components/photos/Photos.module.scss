@@ -1,0 +1,40 @@
+@import '../../sass/abstracts/mixins';
+@import '../../sass/abstracts/vars';
+
+.photosBox{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    .title{
+        @include text(26px, 400, 32px);
+        margin-bottom: 32px;
+        max-width: 200px;
+        width: 100%;
+        align-self: center;
+    }
+
+    .photosContainer{
+        margin: 0 auto;
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: 277px;
+        grid-template-rows: 1fr;
+        gap: 5px;
+        overflow: auto;
+
+        @media screen and(min-width:768px){
+            overflow: visible;
+            grid-template-columns: repeat(2, 277px);
+            grid-auto-flow: row;
+            grid-auto-rows: 1fr;
+            gap: 10px;
+        }
+
+        @media screen and(min-width:1280px){
+            grid-template-rows: repeat(2, 185px);
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+    }
+}

@@ -1,0 +1,111 @@
+@import '../../sass/abstracts/mixins';
+@import '../../sass/abstracts/vars';
+
+.reserveWrapper {
+    
+    background-image: url(../../assets/img/reservation/reservationBG.jfif);
+    background-position: 59% 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 142px ;
+    padding-bottom: 154px;
+
+    @media screen and (min-width:768px) {
+        padding-top: 286px;
+        padding-bottom: 259px;
+
+    }
+
+    // @media screen and(min-width: 768px){
+    //     height: 839px;
+    // }
+
+    .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+        padding: {
+            top: 0;
+            bottom: 0;
+            left: 15px;
+            right: 15px;
+        }
+
+        ;
+
+        @media screen and(min-width: 576px) {
+            padding: 0px 35px;
+        }
+
+        @media screen and(min-width: 768px) {
+            padding: 0px 50px;
+        }
+
+        @media screen and(min-width: 1280px) {
+            padding: 0;
+            max-width: 1140px;
+            width: 100%;
+            margin: 0 auto;
+        }
+    
+
+    .title {
+        color: $colorTitle;
+        @include text(32px, 700, 39px);
+        max-width: 245px;
+        width: 100%;
+        margin-bottom: 36px;
+
+        .orangeText {
+            color: $secondaryColor
+        }
+
+        @media screen and(min-width: 768px){
+            min-width: 500px;
+            width: 100%;
+        }
+
+        @media screen and(min-width: 1280px){
+            min-width: 887px;
+            width: 100%;
+        }
+    }
+
+    .priceContainer {
+        background-color: $bgColor;
+        background-repeat: no-repeat;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        display: flex;
+        padding-left: 18px;
+        margin-bottom: 14px;
+
+        .text {
+            display: flex;
+            flex-direction: column;
+
+            .textPrice {
+                color: $colorTitle;
+                @include text(18px, 400, 27px);
+            }
+
+            .price {
+                color: $colorTitle;
+                @include text(30px, 800, 30px);
+            }
+        }
+    }
+
+    .btn {
+        min-height: 68px;
+        padding: 0px 33px;
+        color: $colorTitle;
+        @include text(16px, 900, 20px);
+        border-radius: 7px;
+        filter: drop-shadow(0px 4px 70px rgba(255, 255, 255, 0.7)) drop-shadow(0px 4px 4px rgba(255, 255, 255, 0.25));
+        background-color: transparent;
+        border: 3px solid #FFFFFF;
+    }
+
+}
+}

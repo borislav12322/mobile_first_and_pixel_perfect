@@ -1,0 +1,47 @@
+@import '../../sass/abstracts/mixins';
+@import '../../sass/abstracts/vars';
+
+.footerBottomSmall {
+    padding-top: 26px;
+    @media screen and(min-width: 576px) {
+        display: none;
+    }
+    .content {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 24px;
+        .payment {        
+            .imgPayment {
+                margin-right: 17px;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+
+        .select {
+
+        }
+    }
+    .footerInfo {
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+
+
+        .footerPhoneNumber{
+            @include text(14px, 400, 17px);
+            color: #B3B3B3;
+            margin-bottom: 10px;
+        }
+
+        .footerCopyright{
+            @include text(14px, 400, 17px);
+            color: #B3B3B3;
+        }
+
+
+    }
+}

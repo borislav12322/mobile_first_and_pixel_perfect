@@ -1,0 +1,32 @@
+@import '../../sass/abstracts/mixins';
+@import '../../sass/abstracts/vars';
+
+.testimonials{
+    display: flex;
+    flex-direction: column;
+    .title{
+        text-align: center;
+        @include text(26px, 400, 39px);
+
+        @media screen and(min-width:768px){
+            text-align: left;
+            @include text(28px, 500, 41px);
+        }
+
+        .dots{
+            display: none;
+            @media screen and(min-width:768px){
+                display: inline;
+            }
+
+        }
+    }
+
+    .btn{
+        @include text(17px, 500, 25px);
+        color: $linkColor;
+        border: none;
+        background-color: transparent;
+        margin-top: 44px;
+    }
+}

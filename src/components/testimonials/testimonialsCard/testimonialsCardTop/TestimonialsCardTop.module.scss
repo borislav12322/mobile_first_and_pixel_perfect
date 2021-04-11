@@ -1,0 +1,29 @@
+@import '../../../../sass/abstracts/mixins';
+@import '../../../../sass/abstracts/vars';
+
+.cardTop{
+    display: flex;
+
+    .clientPhoto{
+        margin-right: 18px;
+    }
+
+
+    .textCard{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        .name{
+            @include text(16px, 500, 19px);
+            margin-bottom: 6px;
+        }
+
+        .position{
+            @include text(14px, 400, 21px);
+            margin-bottom: 7px;
+        }
+
+
+    }
+}

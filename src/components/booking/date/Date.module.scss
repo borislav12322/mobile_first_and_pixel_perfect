@@ -11,11 +11,14 @@
         position: relative;
 
         &::after{
-            content: url(../../../assets/img/booking/calendar.svg);
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            left: 220px;
+
+            @media screen and(min-width: 576px){
+                content: url(../../../assets/img/booking/calendar.svg);
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 220px;
+            }
         }
 
         @media screen and(min-width: 576px){

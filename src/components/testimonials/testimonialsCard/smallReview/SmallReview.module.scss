@@ -1,0 +1,13 @@
+@import '../../../../sass/abstracts/mixins';
+@import '../../../../sass/abstracts/vars';
+
+.reviewRow{
+    .text{
+        @include text(14px, 400, 21px);
+        color: #B3B3B3;
+
+        &::before{
+            content: url('../../../../assets/img/testimonials/checkIcon.svg');
+        }
+    }
+}

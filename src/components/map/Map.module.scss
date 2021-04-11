@@ -1,0 +1,22 @@
+.mapBox {
+    margin-top: 45px;
+    overflow: hidden;
+
+    .mapImg {
+        position: relative;
+        transform: translateX(-600px);
+
+        @media screen and(min-width:576px) {
+            transform: translateX(-500px);
+        }
+
+        @media screen and(min-width:768px) {
+            transform: translateX(-350px);
+        }
+
+        @media screen and(min-width:1280px){
+            transform: translateX(0px);
+        }
+
+    }
+}

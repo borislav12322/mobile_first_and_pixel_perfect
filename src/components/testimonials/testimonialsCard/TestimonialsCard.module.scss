@@ -1,0 +1,100 @@
+@import '../../../sass/abstracts/mixins';
+@import '../../../sass/abstracts/vars';
+
+.testimonialsCard {
+    padding-top: 30px;
+    padding-bottom: 44px;
+    border-bottom: 0.5px solid #C7C7C7;
+
+    .cardTop {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 14px;
+
+        @media screen and(min-width:768px) {
+            flex-direction: row;
+            align-items: flex-end;
+        }
+
+        .userInfo {
+            display: flex;
+
+            .clientPhoto {
+                margin-right: 18px;
+                @media screen and(min-width:768px){
+                    margin-right: 20px;
+                }
+            }
+
+
+            .textCard {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+
+                .name {
+                    @include text(16px, 500, 19px);
+                    margin-bottom: 6px;
+
+                    @media screen and(min-width:768px) {
+                        @include text(18px, 500, 22px);
+                        margin-bottom: 10px;
+                    }
+                }
+
+                .position {
+                    @include text(14px, 400, 21px);
+                    margin-bottom: 7px;
+
+                    @media screen and(min-width:768px) {
+                        margin-bottom: 10px;
+                    }
+                }
+
+                .stars {
+                    align-self: end;
+                }
+            }
+
+
+        }
+
+        .reviewRow {
+            @include text(14px, 400, 21px);
+            color: #B3B3B3;
+            margin-top: 24px;
+
+            &::before {
+                content: url('../../../assets/img/testimonials/checkIcon.svg');
+            }
+        }
+    }
+
+
+    .content {
+        @media screen and(min-width:768px) {
+            margin-left: 105px;
+        }
+        .text {
+            @include text(14px, 400, 21px);
+            margin-bottom: 17px;
+            
+
+            @media screen and(min-width:576px) {
+            max-width: 505px;
+            width: 100%;
+            }
+
+            @media screen and(min-width:768px){
+                @include text(16px, 400, 24px);
+                max-width: 510px;
+                width: 100%;
+            }
+        }
+
+        .date {
+            @include text(14px, 400, 21px);
+            color: #B3B3B3;
+        }
+    }
+}

@@ -1,0 +1,52 @@
+@import '../../sass/abstracts/mixins';
+@import '../../sass/abstracts/vars';
+
+.footerBottomLarge{
+    
+    display: none;
+
+    @media screen and(min-width:576px){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 17px 0px;
+    background-color: #FAF9F8;
+    }
+
+    .payment{
+        display: flex;
+
+        .imgPayment{
+            margin-right: 20px;
+
+
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+    }
+
+    .footerInfo{
+        max-width: 256px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .footerPhoneNumber{
+            @include text(14px, 400, 17px);
+            color: #B3B3B3;
+        }
+
+        .footerCopyright{
+            @include text(14px, 400, 17px);
+            color: #B3B3B3;
+        }
+    }
+
+    .select{
+        @media screen and(min-width:1280px) {
+            z-index: -1;
+        }
+    }
+}

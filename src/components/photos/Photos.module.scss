@@ -1,12 +1,13 @@
 @import '../../sass/abstracts/mixins';
 @import '../../sass/abstracts/vars';
 
-.photosBox{
+.photosBox {
     margin-top: 60px;
     display: flex;
     flex-direction: column;
     text-align: center;
-    .title{
+
+    .title {
         @include text(26px, 400, 32px);
         margin-bottom: 32px;
         max-width: 200px;
@@ -14,7 +15,7 @@
         align-self: center;
     }
 
-    .photosContainer{
+    .photosContainer {
         margin: 0 auto;
         display: grid;
         grid-auto-flow: column;
@@ -23,7 +24,7 @@
         gap: 5px;
         overflow: auto;
 
-        @media screen and(min-width:768px){
+        @media screen and(min-width:768px) {
             overflow: visible;
             grid-template-columns: repeat(2, 277px);
             grid-auto-flow: row;
@@ -31,7 +32,7 @@
             gap: 10px;
         }
 
-        @media screen and(min-width:1280px){
+        @media screen and(min-width:1280px) {
             grid-template-rows: repeat(2, 185px);
             grid-template-columns: repeat(4, 1fr);
         }

@@ -1,0 +1,24 @@
+@import '../../sass/abstracts/mixins';
+@import '../../sass/abstracts/vars';
+
+.booking{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @media screen and(min-width: 1280px){
+        max-width: 770px;
+        width: 100%;
+        justify-content: flex-start;
+    }
+    
+    .title{
+        @include text(26px, 400, 32px);
+        margin-bottom: 41px;
+        text-align: center;
+        @media screen and(min-width: 1280px){
+        text-align: left;
+        }
+
+    }
+}

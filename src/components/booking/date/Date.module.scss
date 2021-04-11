@@ -1,0 +1,26 @@
+@import '../../../sass/abstracts/mixins';
+@import '../../../sass/abstracts/vars';
+
+.booking{
+    padding-top: 20px;
+    padding-bottom: 16px;
+    border: 1px solid #C7C7C7;
+    .title{
+        @include text(18px, 500, 26px);
+        text-align: center;
+        position: relative;
+
+        &::after{
+            content: url(../../../assets/img/booking/calendar.svg);
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 220px;
+        }
+
+        @media screen and(min-width: 576px){
+            text-align: left;
+            margin-left: 20px;
+        }
+    }
+}

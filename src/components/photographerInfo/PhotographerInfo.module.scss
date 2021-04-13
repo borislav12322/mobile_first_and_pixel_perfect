@@ -1,0 +1,40 @@
+@import '../../sass/abstracts/mixins';
+@import '../../sass/abstracts/vars';
+
+.info{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    
+    .img{
+        width: 67px;
+        height: 67px;
+        margin-right: 11px;
+    }
+
+    .content{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+
+        .titlePhotographer{
+            margin-bottom: 5px;
+            @include text(16px, 500, 19px);
+        }
+
+        .textPhotographer{
+            margin-bottom: 7px;
+            @include text(14px, 400, 21px);
+        }
+
+        .btnMore{
+            text-align: left;
+            @include text(14px, 500, 21px);
+            color: $linkColor;
+            border: none;
+            background-color: transparent;
+            max-width: 156px;
+            width: 100%;
+        }
+    }
+}

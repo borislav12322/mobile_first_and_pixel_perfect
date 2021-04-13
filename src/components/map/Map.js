@@ -1,11 +1,16 @@
 import s from './Map.module.scss';
+import Slide from '../swiper/slide/Slide';
+import NumberOne from '../../assets/img/swiper/numberOne.svg';
 
-import Map from '../../assets/img/map/map.svg';
+
 
 function App() {
     return (
         <div className={s.mapBox}>
-            <img src={Map} alt="" className={s.mapImg}/>
+            <div className={s.container}>
+                <Slide ImgNumber={NumberOne} questionName="Где встречаемся?" placeName="Москва" containerStyle={{flexDirection: 'row',
+                backgroundColor: "white"}} />
+            </div>
         </div>
     );
 }

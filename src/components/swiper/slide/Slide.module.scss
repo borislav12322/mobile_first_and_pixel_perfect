@@ -7,17 +7,19 @@
         flex-direction: column;
         align-items: center;
         padding-bottom: 40px;
-        max-width: 233px;
-        width: 100%;
         
         .numberImg{
             margin-bottom: 20px;
         }
-
+.textBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
         .questionText{
             margin-bottom: 10px;
             font-size: 16px;
         }
 
     }
+}
 }

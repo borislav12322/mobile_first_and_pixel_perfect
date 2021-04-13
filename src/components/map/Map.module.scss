@@ -1,22 +1,14 @@
 .mapBox {
-    margin-top: 45px;
-    overflow: hidden;
+    background-image: url(../../assets/img/map/map.svg);
+    height: 423px;
+    display: flex;
+    width: 100%;
+    .container{
+        display: none;
 
-    .mapImg {
-        position: relative;
-        transform: translateX(-600px);
-
-        @media screen and(min-width:576px) {
-            transform: translateX(-500px);
+        @media screen and(min-width:1280px) {
+            display: flex;
         }
-
-        @media screen and(min-width:768px) {
-            transform: translateX(-350px);
-        }
-
-        @media screen and(min-width:1280px){
-            transform: translateX(0px);
-        }
-
     }
+
 }

@@ -4,6 +4,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import Slide from './slide/Slide';
 import NumberOne from '../../assets/img/swiper/numberOne.svg';
 
+import PhotographerInfo from '../photographerInfo/PhotographerInfo';
+
 import 'swiper/swiper.scss';
 import 'swiper/components/navigation/navigation.scss';
 import 'swiper/components/pagination/pagination.scss';
@@ -17,19 +19,12 @@ export default function SwiperLocation() {
 
         <div className="wrapper">
             <Swiper
-                style={{ maxWidth: 233 }}
                 spaceBetween={50}
                 slidesPerView={1}
                 navigation
                 pagination={{ clickable: true }}
                 onSwiper={(swiper) => console.log(swiper)}
                 onSlideChange={() => console.log('slide change')}
-                breakpoints={{
-                    576: {
-                        paddingLeft: 55,
-                        paddingRight: 55,
-                    }
-                }}
 
             >
                 <SwiperSlide>
@@ -45,6 +40,9 @@ export default function SwiperLocation() {
                 </SwiperSlide>
 
             </Swiper>
+
+        <PhotographerInfo/>
+            
         </div>
 
 

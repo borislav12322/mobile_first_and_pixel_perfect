@@ -7,6 +7,7 @@ import Photos from './components/photos/Photos';
 import About from './components/about/About';
 import Booking from './components/booking/Booking.js';
 import Map from './components/map/Map';
+import SwiperLocation from './components/swiper/SwiperLocation';
 import Testimonials from './components/testimonials/Testimonials';
 import Footer from './footer/Footer';
 
@@ -20,15 +21,17 @@ function App() {
       <div className="App__container">
         <Description />
         <ReviewRating />
-        {/* <Photos/> */}
+        <Photos/>
         <About />
         <Booking />
       </div>
       <Map />
       <div className="App__container">
+        <SwiperLocation/>
         <Testimonials />
-        <Footer/>
+        
       </div>
+      <Footer/>
 
     </div>
   );

@@ -29,10 +29,8 @@ function App() {
       <div className="App__container">
         <SwiperLocation/>
         <Testimonials />
-        
       </div>
       <Footer/>
-
     </div>
   );
 }

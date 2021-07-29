@@ -1,13 +1,63 @@
+@import '../../sass/abstracts/vars';
+@import '../../sass/abstracts/mixins';
+
+
 .mapBox {
     background-image: url(../../assets/img/map/map.svg);
+    background-repeat: no-repeat;
+    background-position: 50% center;
     height: 423px;
     display: flex;
+    align-items: center;
     width: 100%;
+
+    @media screen and(min-width:1280px) {
+        height: 509px;
+    }
+    
     .container{
         display: none;
-
+        background-color: #FFFFFF;
+        height: 469px;
+        width: 420px;
+        margin-left: 70px;
+        padding-left: 30px;
+    
         @media screen and(min-width:1280px) {
             display: flex;
+            flex-direction: column;
+        }
+        
+        @media screen and(min-width:1440px) {
+            margin-left: 150px;
+        }
+
+        @media screen and(min-width:1920px) {
+            margin-left: 390px;
+        }
+
+        .slideInner{
+            display: flex;
+            align-items: center;
+            margin-bottom: 35px;
+
+            &:first-child{
+                margin-top: 51px;
+            }
+
+            .slideImg{
+                margin-right: 18px;
+            }
+
+            .content{
+                display: flex;
+                flex-direction: column;
+
+                .title{
+                    margin-bottom: 12px;
+                    @include text(18px, 500, 27px);
+                }
+            }
         }
     }
 

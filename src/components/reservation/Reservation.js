@@ -11,7 +11,7 @@ function Reservation() {
                         <span className={s.textPrice}>Стоимость:</span>
                         <span className={s.price}>1500₽</span>
                     </div>
-                    <img src={PercentIcon} alt="" />
+                    <img src={PercentIcon} alt="percent" />
                 </div>
                 <button className={s.btn}>Забронировать место</button>
             </div>

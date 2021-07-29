@@ -4,21 +4,25 @@
 .reserveWrapper {
     
     background-image: url(../../assets/img/reservation/reservationBG.jfif);
-    background-position: 59% 0;
+    background-position: 62% 0;
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 142px ;
     padding-bottom: 154px;
 
+    @media screen and (min-width:576px) {
+        background-position: 64% 0;
+    }
+
     @media screen and (min-width:768px) {
         padding-top: 286px;
         padding-bottom: 259px;
-
+        
     }
 
-    // @media screen and(min-width: 768px){
-    //     height: 839px;
-    // }
+    @media screen and (min-width:1280px) {        
+        
+    }
 
     .container {
     display: flex;
@@ -29,9 +33,7 @@
             bottom: 0;
             left: 15px;
             right: 15px;
-        }
-
-        ;
+        };
 
         @media screen and(min-width: 576px) {
             padding: 0px 35px;

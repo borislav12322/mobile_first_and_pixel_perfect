@@ -1,0 +1,9 @@
+@import '../../../sass/abstracts/vars';
+@import '../../../sass/abstracts/mixins';
+
+.container{
+    .textInfo{
+        @include text(18px, 400, 26px);
+        font-style: normal;
+    }
+}
